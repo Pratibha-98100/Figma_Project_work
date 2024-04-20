@@ -1,0 +1,664 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* ---------heading------- */
+h1{
+   display: flex;
+   justify-content: center;
+   font-size: 51px;
+}
+
+
+button{
+  cursor:pointer;
+}
+
+/* -----------category name------------------- */
+.tabName{
+  display: flex;
+  font-size: 51px;
+  height: 30px;
+  margin-left: 390px;
+  text-decoration: none;
+  border-radius:-1% white;
+}
+
+.tabName button{
+  height: 30px;
+  width: 21%;
+  font-size: 21px;
+}
+
+
+
+/* -------------------------------------------------------------------men---------------------------------------------------- */
+#tab1 .mencard1 {
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 29px;
+  margin-right: 20px; 
+  margin-left: 20px; 
+  display: flex;
+  flex-direction: column;
+  gap:9px;
+  width: 20%;
+  display: inline-block; 
+}
+
+#tab1 img{
+  width: 100%;
+  height: 290px;
+  border-radius: 6px; 
+ }
+
+ #tab1 .menBadge_text{
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  top: 210px;
+  margin: 6px;
+  color: black; 
+  padding: 5px; 
+  border-radius: 5px; 
+  cursor:pointer;
+ }
+
+.menCard2 {
+  display: flex;
+  flex-direction: row;
+  gap:90px;
+  font-size: 16px; 
+  /* change in font  brand name convert h6 to li */
+}
+
+.menCard3 {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  font-size: 16px;
+}
+
+
+#tab1 .addToCartBtn{
+  margin-top: 21px; 
+  background-color: black;
+  color: white;
+  width:100%;
+  height: 39px;
+  font-size: 15px;
+  margin-left: 0%;
+  border-radius: 6px; 
+}
+
+
+.menBrand{
+  margin-top: 21px;
+  margin-left: -39px;
+}
+
+
+/* ----------------------------reponsive------------- */
+
+/* ---tablet----- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .tabName {
+    font-size: 40px; 
+    height: 25px; 
+    margin-left: 200px; 
+  }
+
+  .tabName button {
+    font-size: 18px; 
+    width: 23%; 
+  }
+
+  #tab1 .mencard1 {
+    margin-left: 10%; 
+    margin-right: 10px; 
+    width: 30%; 
+    justify-content: center;
+  
+  }
+
+  #tab1 img {
+    width:100%;
+    height: 250px; 
+  }
+
+  #tab1 .menBadge_text {
+    top: 180px;
+    font-size: 18px; 
+    display: none;
+  }
+
+  .menCard2 {
+    gap: 60px; 
+    font-size: 15px;
+  }
+
+  .menCard3 {
+    gap: 49px;
+    font-size: 12px;
+  }
+
+  #tab1 .addToCartBtn {
+    margin-left: 0%; 
+  }
+
+
+/* .menBrand{
+  margin-top: 21px;
+  margin-left: -39px;
+} */
+
+}
+
+
+
+/* Mobile  */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 32px; 
+  }
+
+  .tabName {
+    margin-left: 0; 
+    justify-content: center; 
+  }
+
+  .tabName button {
+    width: 25%; 
+    font-size: 16px; 
+  }
+
+  #tab1 .mencard1 {
+    width: 90%; 
+    margin-left: 61px; 
+  }
+
+  #tab1 img {
+    height: auto; 
+    width: 70%; 
+  }
+
+  #tab1 .menBadge_text {
+    top: 160px;
+    font-size: 14px; 
+    display: none;
+  }
+
+  #tab1 .menCard2 {
+    font-size: 12px;
+       gap: 69px;
+  }
+
+  #tab1 .menCard3 {
+    font-size: 12px;
+    gap: 59px;
+    /* margin-left: -3.6%; */
+    /* justify-content: space-evenly; */
+  }
+
+  #tab1 .addToCartBtn {
+    margin-top: 10px; 
+    font-size: 14px; 
+    width:70%;
+  }
+
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------women---------------------------------------------------- */
+#tab2 .womenCard1 {
+  display: inline-block;
+  width: 21%; 
+  margin: 10px; 
+  box-sizing: border-box; 
+  text-align: center; 
+  justify-content: space-between;
+  gap: 60%;
+
+}
+
+
+
+/* ----Style for the image and badge container ---*/
+#tab2 .imageAndBadge {
+  position: relative; 
+   
+}
+
+/*--- Style for the product image-- */
+#tab2 .imageAndBadge img {
+  width: 100%;
+  height: 341px;
+  gap:60%;
+  margin-left: 21%;
+  margin-top: 15px;
+  border-radius: 6px; 
+  
+}
+
+/* ---Style for the badge text-- */
+#tab2 .womenBadge_text {
+  position: absolute; 
+  top: 6px;
+  background-color: red; 
+  color: white; 
+  padding: 5px; 
+  border-radius: 5px;
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  top: 190px;
+  margin-left: -71px;
+  color: black; 
+  padding: 5px; 
+  border-radius: 5px; 
+  cursor:pointer;
+}
+
+
+
+/* ---Style for other product details---- */
+#tab2 .womenCard2{
+  display: flex;
+  flex-direction: row;
+  gap:26%;
+  margin-left: 90px;
+  font-size: 15px;
+}
+
+.womenCard3 {
+  margin-left: 90px; 
+  display: flex;
+  justify-content: space-evenly;
+  gap:24%;
+  /* padding-left: 0; */
+  font-size: 15px;
+}
+
+
+#tab2 .addToCartBtn{
+  margin-top: 21px; 
+  background-color: black;
+  color: white;
+  width:100%;
+  height: 39px;
+  font-size: 15px;
+  margin-left: 21%;
+  border-radius: 6px; 
+}
+  
+
+.womenBrand{
+  margin-top: 21px;
+  margin-left: -39px;
+}
+
+/* ----------------------------reponsive------------- */
+
+/* ---tablet----- */
+/* Tablet Screen (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .tabName {
+    margin-left: 150px;
+  }
+
+  .tabName button {
+    width: 30%;
+    font-size: 18px;
+  }
+
+  #tab2 .womenCard1 {
+    width: 39%;
+    margin: 10px;
+    justify-content: center;
+    margin-left: 60px;
+    margin-top: 12spx;
+  }
+
+  #tab2 .imageAndBadge img {
+    margin-left: 0;
+    height: 260px;
+  }
+
+  #tab2 .womenBadge_text {
+    top: 160px;
+    margin-left: -120px;
+    font-size: 12px;
+     z-index: 100;
+     display: none;
+  }
+
+  #tab2 .womenCard2 {
+    margin-left: 0px;
+    font-size: 15px;
+    gap: 30%;
+  }
+
+  .womenCard3 {
+    margin-left: 0px;
+    font-size: 15px;
+  }
+
+  #tab2 .addToCartBtn {
+    margin-left: 0;
+  }
+}
+
+
+
+
+/* Mobile  (Up to 767px) */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px; 
+    text-align: center; 
+  }
+
+  .tabName {
+    display: flex;
+    justify-content: center; 
+    font-size: 24px;
+    height: auto;
+    margin: 0; 
+  }
+
+  .tabName button {
+    height: 30px; 
+    width: 30%;
+    font-size: 14px;
+  }
+
+  #tab2 .womenCard1 {
+    display: inline-block; 
+    width: 70%; 
+    margin-left: 60px; 
+    text-align: center; 
+    gap: 0; 
+  }
+
+  #tab2 .imageAndBadge img {
+    width: 100%; 
+    height: auto;
+    margin-left: 0; 
+    margin-top: 15px; 
+    border-radius: 6px;
+  }
+
+  #tab2 .womenBadge_text {
+    top: 150px; 
+    margin-left: -90px;
+    display: none; 
+  }
+
+  #tab2 .womenCard2 {
+    gap: 69px;
+    margin-left: 0; 
+    font-size: 12px; 
+  }
+
+  .womenCard3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin-left: 0; 
+    font-size: 12px;
+  }
+
+  #tab2 .addToCartBtn {
+    margin-top: 21px;
+    margin-left: 0; 
+    width: 100%; 
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------kid---------------------------------------------------- */
+#tab3 .kidCard1 {
+  display: inline-block; 
+  width: 21%; 
+  margin: 10px; 
+  box-sizing: border-box; 
+  text-align: center;
+  justify-content: space-between;
+  gap: 60%;
+
+}
+
+
+/*--- Style for the image and badge container--- */
+#tab3 .imageAndBadge {
+  position: relative; 
+   
+}
+
+
+/* ---Style for the product image--- */
+#tab3 .imageAndBadge img {
+  width: 100%; 
+  height: 341px; 
+  gap:60%;
+  margin-left: 21%;
+  margin-top: 15px;
+  border-radius: 6px; 
+  
+}
+
+
+
+/*--- Style for the badge text ---*/
+#tab3 .kidBadge_text {
+  position: absolute; 
+  top: 6px; 
+  background-color: red; 
+  color: white; 
+  padding: 5px; 
+  border-radius: 5px; 
+  z-index: 100;
+  background-color: white;
+  position: absolute;
+  top: 190px;
+  margin-left: -71px;
+  color: black; 
+  padding: 5px; 
+  border-radius: 5px; 
+  cursor:pointer;
+}
+
+
+
+/* ----Style for other product details---- */
+#tab3 .kidCard2{
+  display: flex;
+  flex-direction: row;
+  gap:26%;
+  margin-left: 90px;
+  font-size: 15px;
+}
+
+.kidCard3 {
+  margin-left: 90px; 
+  display: flex;
+  justify-content: space-around;
+  gap:24%;
+  font-size: 16px;
+}
+
+
+#tab3 .addToCartBtn{
+  margin-top: 21px; 
+  background-color: black;
+  color: white;
+  width:100%;
+  height: 39px;
+  font-size: 15px;
+  margin-left: 21%;
+    border-radius: 6px; 
+}
+     
+.discountSpan{
+  color: red;
+}
+
+.compare_at_price{
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+
+
+.kidBrand{
+  margin-top: 21px;
+  margin-left: -39px;
+}
+
+
+/*  tablet  (768px to 1024px) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+  h1 {
+    font-size: 36px; 
+  }
+
+  .tabName {
+    margin-left: 10%; 
+  }
+
+  .tabName button {
+    font-size: 18px; 
+  }
+
+  #tab3 .kidCard1 {
+    width: 30%; 
+    margin-left: 12%; 
+    justify-content: center;
+    margin-top: 12px; 
+
+  }
+
+  #tab3 .imageAndBadge img {
+    margin-left: 0; 
+    width:100%;
+    height: 260px;
+  }
+
+  #tab3 .kidBadge_text {
+    margin-left: -50px;
+    top: 150px;
+    display: none;
+  }
+
+  #tab3 .kidCard2 {
+    margin-left: 5%;
+    gap: 60px;
+    font-size: 15px;
+  }
+
+  .kidCard3 {
+    margin-left: 5%; 
+    gap: 15%; 
+    font-size: 16px;
+  }
+
+  #tab3 .addToCartBtn {
+    margin-left: 0; 
+  }
+
+}
+
+
+/* Mobile Styles (Up to 767px) */
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 24px; 
+    text-align: center; 
+  }
+
+  .tabName {
+    display: flex;
+    justify-content: center; 
+    font-size: 24px; 
+    height: auto; 
+    margin: 0;
+  }
+
+  .tabName button {
+    height: 30px;
+    width: 30%; 
+    font-size: 14px; 
+  }
+
+  #tab3 .kidCard1 {
+    display: inline-block; 
+    width: 70%; 
+    margin-left: 60px; 
+    text-align: center; 
+    gap: 0;
+  }
+
+  #tab3 .imageAndBadge img {
+    width: 100%;
+    height: auto; 
+    margin-left: 0; 
+    margin-top: 15px; 
+    border-radius: 6px; 
+  }
+
+  #tab3 .kidBadge_text {
+    top: 150px; 
+    margin-left: -90px;
+    display: none;
+  }
+
+  #tab3 .kidCard2 {
+     gap: 69px;
+    margin-left: 0;
+    font-size: 12px; 
+  }
+
+  .kidCard3 {
+    display: flex;
+    justify-content: space-around;
+    gap: 60px;
+    margin-left: 0;
+    font-size: 12px;
+  }
+
+  #tab3 .addToCartBtn {
+    margin-top: 21px; 
+    margin-left: 0; 
+    width: 100%; 
+  }
+}
